@@ -495,13 +495,13 @@ var drawStyle:DrawStyle = { smoothing: true };
 
 ```haxe
 // Circle
-canvas.drawCircle(X, Y, Radius, Color, lineStyle, drawStyle);
+FlxSpriteUtil.drawCircle(canvas ,X, Y, Radius, Color, lineStyle, drawStyle);
 
 // Ellipse
-canvas.drawEllipse(X, Y, Width, Height, Color, lineStyle, drawStyle);
+FlxSpriteUtil.drawEllipse(canvas, X, Y, Width, Height, Color, lineStyle, drawStyle);
 
 // Line
-canvas.drawLine(StartX, StartY, EndX, EndY, lineStyle);
+FlxSpriteUtil.drawLine(canvas, StartX, StartY, EndX, EndY, lineStyle);
 
 // Polygon
 var vertices = new Array<FlxPoint>();
@@ -512,19 +512,19 @@ vertices[3] = new FlxPoint(0, 100);
 canvas.drawPolygon(vertices, Color, lineStyle, drawStyle);
 
 // Triangle
-canvas.drawTriangle(X, Y, Height, Color, lineStyle, drawStyle);
+FlxSpriteUtil.drawTriangle(canvas, X, Y, Height, Color, lineStyle, drawStyle);
 
 // Rect
-canvas.drawRect(X, Y, Width, Height, Color, lineStyle, drawStyle);
+FlxSpriteUtil.drawRect(canvas, X, Y, Width, Height, Color, lineStyle, drawStyle);
 
 // Round Rect
-canvas.drawRoundRect(X, Y, Width, Height, EllipseWidth, EllipseHeight, Color, lineStyle, drawStyle);
+FlxSpriteUtil.drawRoundRect(canvas, X, Y, Width, Height, EllipseWidth, EllipseHeight, Color, lineStyle, drawStyle);
 
 // Rect Complex
-canvas.drawRoundRectComplex(X, Y, Width, Height, TopLeftRadius, TopRightRadius, BottomLeftRadius, BottomRightRadius, Color, lineStyle, drawStyle);
+FlxSpriteUtil.drawRoundRectComplex(canvas, X, Y, Width, Height, TopLeftRadius, TopRightRadius, BottomLeftRadius, BottomRightRadius, Color, lineStyle, drawStyle);
 ```
 
-Use `canvas.fill(FlxColor.TRANSPARENT);` to clear the canvas.
+Use `FlxSpriteUtil.fill(canvas, FlxColor.TRANSPARENT);` to clear the canvas.
 
 
 ## HUD
